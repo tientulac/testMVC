@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <%-include('layout/head')%>
+</head>
+<body>
+    <div class="container">
+        <a href="/">
+            <h3>Home page</h3>
+        </a>
+        <h2>UPDATE PRODUCT</h2>
+        <form action="/update/success" method="POST">
+            <div class="form-group">
+                <label>Product ID</label>
+                <input class="form-control" type="text" name='_id'>
+            </div>
+            <div class="form-group">
+                <label>Product name</label>
+                <input class="form-control" type="text" name='name'>
+            </div>
+
+            <input id="update-btn" class="btn btn-primary" type="submit" value="SAVE">
+        </form>
+    </div>
+</body>
+</html>

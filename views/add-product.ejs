@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<%-include('layout/head')%>
+<body>
+<div class="container">
+    <a href="/"><h3>Home page</h3></a>
+    <h2>ADD PRODUCT</h2>
+    <form action="/add/success" method="POST">
+        <div class="form-group">
+            <label>Product name</label>
+            <input class="form-control" type="text" name='name'>
+        </div>
+        <input id="add-btn" class="btn btn-primary" type="submit" value="ADD PRODUCT">
+    </form>
+</div>
+</body>
+</body>
+</html>

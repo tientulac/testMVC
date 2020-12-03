@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<%-include('layout/head')%>
+</head>
+<body>
+HOME PAGE !!!!!!!!!
+
+    <ul>
+        <% danhmuc.forEach((entry) => { %>
+                <li>name: <%= entry.name %><br>
+                id: <%= entry._id %></li>
+        <% }) %>
+    </ul>
+
+<hr>
+
+</body>
+</html>

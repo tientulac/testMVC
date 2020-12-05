@@ -1,53 +1,38 @@
 const express = require('express');
 const router = express.Router();
 
-const DanhMucModel = require('../models/danhmuc.model');
-// const HocVienModel = require('../models/hocvien.model');
-// const GiaoVienModel = require('../models/giaovien.model');
-// const HocVienController = require('../controller/hocvien.controller');
+// Require the controllers WHICH WE DID NOT CREATE YET!!
+const danhmuc_controller = require('../controller/danhmuc.controller');
+const hocvien_controller = require('../controller/hocvien.controller');
+
 
 /* -------------------------------------DANH MUC---------------------------------------------------------------------- */
-router.post('/insertDataDanhMuc',function (req,res) {
-    DanhMucModel(req,res).insertData(req,res);
+// a simple test url to check that all of our files are communicating correctly.
+router.post('/insertDataDanhmuc',function (req,res) {
+    danhmuc_controller.danhmuc_insert(req,res);
 });
-router.post('/deleteDataDanhmuc',function (req,res) {
-    DanhMucModel.deleteData(req,res);
+router.get('/findDataDanhmuc',function (req,res) {
+    danhmuc_controller.danhmuc_find(req,res);
 });
-router.post('/updateDataDanhMuc',function (req,res) {
-    DanhMucModel.updateData(req,res);
+router.put('/updateDataDanhmuc/:id',function (req,res) {
+    danhmuc_controller.danhmuc_update(req,res);
 });
-router.get('/findDataDanhMuc',function (req,res) {
-    DanhMucModel.findData(req,res);
+router.delete('/deleteDataDanhmuc/:id',function (req,res) {
+    danhmuc_controller.danhmuc_delete(req,res);
 });
 
-// /* ------------------------------------- HOC VIEN---------------------------------------------------------------------- */
-// router.post('/insertDataHocVien',function (req,res) {
-//     HocVienModel.insertData(req,res);
-// });
-// router.post('/deleteDataHocVien',function (req,res) {
-//     HocVienModel.deleteData(req,res);
-// });
-// router.post('/updateDataHocVien',function (req,res) {
-//     HocVienModel.updateData(req,res)
-// });
-// router.get('/findDataHocVien',function (req,res) {
-//     HocVienModel.findData(req,res);
-// });
-
-
-// /* ------------------------------------- GIAO VIEN---------------------------------------------------------------------- */
-// router.post('/insertDataGiaoVien',function (req,res) {
-//     GiaoVienModel.insertData(req,res);
-// });
-// router.post('/deleteDataGiaoVien',function (req,res) {
-//     GiaoVienModel.deleteData(req,res);
-// });
-// router.post('/updateGiaoVien',function (req,res) {
-//     GiaoVienModel.updateData(req,res);
-// });
-// router.get('/findDataGiaoVien',function (req,res) {
-//     GiaoVienModel.findData(req,res);
-// });
-
+/* -------------------------------------HOC VIEN---------------------------------------------------------------------- */
+router.post('/insertDataHocvien',function (req,res) {
+    hocvien_controller.hocvien_insert(req,res);
+});
+router.get('/findDataHocvien',function (req,res) {
+    hocvien_controller.hocvien_find(req,res);
+});
+router.put('/updateDataHocvien/:id',function (req,res) {
+    hocvien_controller.hocvien_update(req,res);
+});
+router.delete('/deleteDataHocvien/:id',function (req,res) {
+    hocvien_controller.hocvien_delete(req,res);
+});
 
 module.exports = router;

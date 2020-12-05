@@ -1,26 +1,48 @@
-const DanhMucModel = require('../models/config/db/danhmuc');
-
-function displayData(req,res) {
-    DanhMucModel.find({})
-        .then(danhmuc => {
-            res.render('index', { danhmuc: danhmuc });
-        })
-        .catch(err => {
-            console.log('Error: ', err);
-            throw err;
-        })
-}
+const Danhmuc = require('../models/danhmuc.model');
+const MongoClient = require('mongodb').MongoClient;
+const url = "mongodb://localhost:27017/admin";
 
 
-
-function deleteDataById(req,res) {
-    let productId = req.body._id;
-    DanhMucModel.findByIdAndDelete(productId, (err, doc) => {
-        if (err) throw err;
-        res.send(productId);
-        console.log(productId);
+exports.danhmuc_insert = function (req, res) {
+    const dm = new Danhmuc(
+        {
+            name: req.body.name
+        }
+    );
+    dm.save(function (err) {
+        if (err) {
+            return (err);
+        }
+        var a = {
+            "status": "success",
+            " message":"Thanh Cong"
+        }
+        res.json(a);
+        console.log(dm);
     })
-}
+};
 
-module.exports.displayData = displayData;
-module.exports.deleteDataById = deleteDataById;
+exports.danhmuc_update = function (req, res) {
+    Danhmuc.findByIdAndUpdate(req.params.id, {$set: req.body}, function (err, product) {
+        if (err) return (err);
+        res.send('Product udpated.');
+    });
+};
+
+exports.danhmuc_delete = function (req, res) {
+    Danhmuc.findByIdAndRemove(req.params.id, function (err) {
+        if (err) return (err);
+        var a = {
+            "status": "success",
+            " message":"Thanh Cong"
+        }
+        res.json(a);
+    })
+};
+
+exports.danhmuc_find = function (req, res) {
+    Danhmuc.find({}, function (err, result) {
+        if (err) return next(err);
+        res.send(result);
+    })
+};

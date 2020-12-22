@@ -10,17 +10,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="83ce9fa9-1a28-4369-84c0-f8bea7ddaddc" name="Default Changelist" comment="project">
-      <change afterPath="$PROJECT_DIR$/models/lophoc.model.js" afterDir="false" />
+    <list default="true" id="83ce9fa9-1a28-4369-84c0-f8bea7ddaddc" name="Default Changelist" comment="update">
+      <change afterPath="$PROJECT_DIR$/Procfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/danhmuc.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/controller/danhmuc.controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/hocvien.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/controller/hocvien.controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/hocvien.model.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/hocvien.model.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/ejs/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/ejs/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/CRUD.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/CRUD.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/index.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/index.ejs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,8 +98,23 @@
       <workItem from="1607433609463" duration="10000" />
       <workItem from="1607436870896" duration="955000" />
       <workItem from="1607654447454" duration="4104000" />
-      <workItem from="1608603767822" duration="579000" />
+      <workItem from="1608603767822" duration="961000" />
     </task>
+    <task id="LOCAL-00001" summary="update">
+      <created>1608604370276</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1608604370276</updated>
+    </task>
+    <task id="LOCAL-00002" summary="update">
+      <created>1608604497980</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1608604497980</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -127,7 +134,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="project" />
-    <option name="LAST_COMMIT_MESSAGE" value="project" />
+    <MESSAGE value="update" />
+    <option name="LAST_COMMIT_MESSAGE" value="update" />
   </component>
   <component name="WindowStateProjectService">
     <state x="726" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1605523490826">
@@ -152,10 +160,11 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1606967967113" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1606969325265">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1608604499802">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1606969325265" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1608604499802" />
     <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1606999838829">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

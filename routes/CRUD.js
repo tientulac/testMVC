@@ -34,5 +34,8 @@ router.put('/updateDataHocvien/:id',function (req,res) {
 router.delete('/deleteDataHocvien/:id',function (req,res) {
     hocvien_controller.hocvien_delete(req,res);
 });
+router.get('/findDataByIdHocvien/:id',function (req,res) {
+    hocvien_controller.hocvien_findById(req,res)
+})
 
 module.exports = router;

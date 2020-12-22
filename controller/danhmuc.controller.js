@@ -1,7 +1,4 @@
 const Danhmuc = require('../models/danhmuc.model');
-const MongoClient = require('mongodb').MongoClient;
-const url = "mongodb://localhost:27017/admin";
-
 
 exports.danhmuc_insert = function (req, res) {
     const dm = new Danhmuc(

@@ -53,3 +53,10 @@ exports.hocvien_find = function (req, res) {
         res.send(result);
     })
 };
+
+exports.hocvien_findById = function (req,res) {
+    Hocvien.findById(req.params.id, function (err, result,next) {
+        if (err) return next(err);
+        res.send(result);
+    })
+}

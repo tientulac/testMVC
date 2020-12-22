@@ -12,4 +12,4 @@ const HocvienSchema = mongoose.Schema({
     condition: {type:String},
 });
 
-module.exports = mongoose.model('hocvien', HocvienSchema, 'hocvien');
+module.exports = mongoose.model('hocvien',HocvienSchema ,'hocvien' );

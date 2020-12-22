@@ -13,7 +13,7 @@ const bodyparser = require('body-parser');
 
 const indexRouter = require('./routes/index');
 const usersRouter = require('./routes/users');
-const CRUDrouter = require('./routes/CRUD');
+const CRUDRouter = require('./routes/CRUD');
 
 app.use(bodyparser.json());
 app.use(bodyparser.urlencoded({ extended: false }));
@@ -37,7 +37,7 @@ app.set('view engine', 'ejs');
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
-app.use('/restAPI/', CRUDrouter);
+app.use('/restAPI/', CRUDRouter);
 
 
 app.use(function(req, res, next) {
